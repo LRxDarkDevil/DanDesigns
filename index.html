@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+	<header id="header">
+		<div class="container">
+			<h1 class="hs">Portfolio of DanDesigns</h1>
+			<nav>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a onclick="todark()" id="todark">Switch to Dark</a></li>
+					<li><a id="tolight" style="display: none;" onclick="tolight()">Switch to Light</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<section id="about">
+		<div class="container">
+			<h2 class="hs">About Me</h2>
+			<p>Hey Everyone! It's Nice To Have You Checking My Profile. I Am A 15 Year Teenager Studying In Grade 10th. I Am A Self-Taught Graphic Designer Who Is Ready To Create For You! </p>
+		</div>
+		<center><img src="https://cdn.discordapp.com/attachments/710462063486566440/1080856376840044604/a_ab932b84f381bac8503834e52d0219fc.gif"></center>
+	</section>
+
+	<section id="services">
+		<div class="container">
+			<h2 class="hs">My Services</h2>
+			<ul>
+				<li>Logo Design</li>
+				<li>Web Design</li>
+				<li>Print Design</li>
+				<li>Brand Identity</li>
+			</ul>
+		</div>
+	</section>
+
+	<section id="portfolio">
+		<div class="container">
+			<h2 class="hs">My Portfolio</h2>
+			<div class="gallery" style="display: inline;">
+				<a href="logo.html"><img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/02efa8152448787.63f03a93b73d3.jpg" alt="Portfolio Image 1"></a>
+				<a href="thumbnail.html"><img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/b0a1e1152448717.Y3JvcCw4MDgsNjMyLDAsMA.jpg" alt="Portfolio Image 2"></a>
+				<a href="header.html"><img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/a06d72155174885.Y3JvcCw4MDgsNjMyLDAsMA.jpg" alt="Portfolio Image 3"></a>
+				<a href="banner.html"><img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/15d795152448435.Y3JvcCw4MDgsNjMyLDAsMA.jpg" alt="Portfolio Image 4"></a>
+				<a href="others.html"><img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/43e8d0152459517.Y3JvcCw4MDgsNjMyLDAsMA.jpg" alt="Portfolio Image 5"></a>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="contact">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="hs" class="heading-section">Contact Form</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-10">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-md-6">
+								<div class="contact-wrap w-100 p-lg-5 p-4">
+									<h3 class="mb-4" class="hs">Send us a message</h3>
+									<div id="form-message-warning" class="mb-4"></div> 
+				      		<div id="form-message-success" class="mb-4">
+				            Your message was sent, thank you!
+				      		</div>
+									<form id="contactForm" name="contactForm" class="contactForm" onsubmit="sendEmail(); reset(); return false;">
+										<div class="row">
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="name" id="name" placeholder="Name">
+												</div>
+											</div>
+											<div class="col-md-12"> 
+												<div class="form-group">
+													<input type="email" class="form-control" name="email" id="email" placeholder="Email">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message"></textarea>
+												</div>
+											</div>
+											<div class="col-md-12">
+												<div class="form-group">
+													<input type="submit" value="Send Message" class="btn btn-primary">
+													<div class="submitting"></div>
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="col-md-6 d-flex align-items-stretch">
+								<div class="info-wrap w-100 p-lg-5 p-4 img">
+									<h3 class="hs">Contact us</h3>
+									<p class="mb-4">We're open for any suggestion or just to have a chat</p>
+				        	<div class="dbox w-100 d-flex align-items-start">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+										<path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+									  </svg>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Discord:</span>DanDesigns#5560</p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+										<path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+									  </svg>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Twitter:</span>DanDesigns00</p>
+					          </div>
+				          </div>
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+<footer>
+	<img style="width: 100%; height: 100%;" src="https://mir-s3-cdn-cf.behance.net/9cc47b7966f1aa9ca1cfae3c4864ca6d/ac5323e7-0ca1-45d0-9735-115550026c83_rwc_0x197x3000x525x3000.jpg?h=d47dd46ed6990cc53ab64a2474cae580">
+</footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+	let name = document.getElementById("name").value;
+	let subject = document.getElementById("subject").value;
+	let email = document.getElementById("email").value;
+	let message = document.getElementById("message").value;
+	console.log(name,subject,email,message)
+	function sendEmail(){
+		let name = document.getElementById("name").value;
+	let subject = document.getElementById("subject").value;
+	let email = document.getElementById("email").value;
+	let message = document.getElementById("message").value;
+	let body = `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+		Email.send({
+        SecureToken : "8f17509d-b974-4f5f-a10e-f2aad18f743f", //add your token here
+        To : 'tahaadnanawan@gmail.com', 
+        From : "jeromu688@gmail.com",
+        Subject : subject,
+        Body : body
+    })
+	alert("Message Sent")
+}
+function todark() {
+	document.body.style.backgroundColor = "rgba(0, 0, 0, 0.9)";
+	document.getElementById("header").style.backgroundColor = "black"
+	document.getElementById("tolight").style.display = "inline"
+	document.getElementById("todark").style.display = "none"
+	let hs = document.getElementsByClassName("hs");
+	for (let i = 0; i < hs.length; i++) {
+	 hs[i].style.color = "#fafafa";
+	}
+}
+function tolight() {
+	document.body.style.backgroundColor = "rgba(217, 217, 217, 0.71)";
+	document.getElementById("header").style.backgroundColor = "white"
+	document.getElementById("tolight").style.display = "none"
+	document.getElementById("todark").style.display = "inline"
+	let hs = document.getElementsByClassName("hs");
+	for (let i = 0; i < hs.length; i++) {
+	 hs[i].style.color = "black";
+	}
+}
+</script>
+</body>
+</html>
