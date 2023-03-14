@@ -57,7 +57,20 @@ header {
     display: inline-block;
     margin-right: 20px;
     }
-    
+    .logo-wrapper {
+		position: relative;
+	}
+	.logo {
+        height: 5%;
+        width: 5%;
+		position: absolute;
+		top: 14px;
+		left: -6%;
+		height: auto;
+		max-width: 100%;
+		margin-right: 10px;
+		z-index: -1;
+	}
     header ul li:last-child {
     margin-right: 0;
     }
@@ -109,7 +122,6 @@ header {
     width: calc(25% - 20px);
     margin-right: 20px;
     margin-bottom: 20px;
-    border: 5px solid #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
     

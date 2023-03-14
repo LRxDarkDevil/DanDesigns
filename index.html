@@ -15,12 +15,16 @@
 <body>
 	<header id="header">
 		<div class="container">
+			<div class="logo-wrapper">
+				<img src="https://media.discordapp.net/attachments/1066715664087273616/1081120822946705469/D_Gradient_Logo_Light_Blue__Navy_Blue_2.png?width=473&height=473" alt="Logo" class="logo">
+			</div>
 			<h1 class="hs">Portfolio of DanDesigns</h1>
 			<nav>
 				<ul>
 					<li><a href="#about">About</a></li>
 					<li><a href="#services">Services</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#donate">Donate</a></li>
 					<li><a href="#contact">Contact</a></li>
 					<li><a onclick="todark()" id="todark">Switch to Dark</a></li>
 					<li><a id="tolight" style="display: none;" onclick="tolight()">Switch to Light</a></li>
@@ -34,7 +38,7 @@
 			<h2 class="hs">About Me</h2>
 			<p>Hey Everyone! It's Nice To Have You Checking My Profile. I Am A 15 Year Teenager Studying In Grade 10th. I Am A Self-Taught Graphic Designer Who Is Ready To Create For You! </p>
 		</div>
-		<center><img src="https://cdn.discordapp.com/attachments/710462063486566440/1080856376840044604/a_ab932b84f381bac8503834e52d0219fc.gif"></center>
+		<center><img src="https://cdn.discordapp.com/attachments/710462063486566440/1080856376840044604/a_ab932b84f381bac8503834e52d0219fc.gif" style="border-radius: 50%;"></center>
 	</section>
 
 	<section id="services">
@@ -54,12 +58,29 @@
 			<h2 class="hs">My Portfolio</h2>
 			<div class="gallery" style="display: inline;">
 				<a href="logo.html"><img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/02efa8152448787.63f03a93b73d3.jpg" alt="Portfolio Image 1"></a>
-				<a href="thumbnail.html"><img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/b0a1e1152448717.Y3JvcCw4MDgsNjMyLDAsMA.jpg" alt="Portfolio Image 2"></a>
-				<a href="header.html"><img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/a06d72155174885.Y3JvcCw4MDgsNjMyLDAsMA.jpg" alt="Portfolio Image 3"></a>
+				<a href="thumbnail.html"><img src="https://media.discordapp.net/attachments/1066715664087273616/1084070949764214814/New_Thumbnail_Behance_Cover_With_Thumbs_copy.jpg?width=605&height=473" alt="Portfolio Image 2"></a>
+				<a href="header.html"><img src="https://media.discordapp.net/attachments/1066715664087273616/1084070949520936970/New_Header_Behance_Cover_With_Headers_orange_bg.jpg?width=605&height=473" alt="Portfolio Image 3"></a>
 				<a href="banner.html"><img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/15d795152448435.Y3JvcCw4MDgsNjMyLDAsMA.jpg" alt="Portfolio Image 4"></a>
-				<a href="others.html"><img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/43e8d0152459517.Y3JvcCw4MDgsNjMyLDAsMA.jpg" alt="Portfolio Image 5"></a>
+				<a href="others.html"><img src="https://media.discordapp.net/attachments/1066715664087273616/1084431525124255845/Other_Projects_Behance_Cover_copy.jpg?width=605&height=473" alt="Portfolio Image 5"></a>
+			</div>
+	</section>
+
+    <section class="ftco-section" id="donate">
+		<div class="row justify-content-center">
+			<div class="col-md-6 text-center mb-5">
+				<h2 class="hs" class="heading-section">Donate</h2>
+				<p>If You Want to Help Financially You Can Do it here.</p>
 			</div>
 		</div>
+		
+	</div>
+	<div style="display: flex; justify-content: center;">
+	<form action="https://www.paypal.com/donate" method="post" target="_top">
+	<input type="hidden" name="hosted_button_id" value="HF833Y2PL62A4" />
+	<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+	<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+	</form>
+</div>
 	</section>
 
 	<section class="ftco-section" id="contact">
@@ -75,7 +96,7 @@
 						<div class="row no-gutters">
 							<div class="col-md-6">
 								<div class="contact-wrap w-100 p-lg-5 p-4">
-									<h3 class="mb-4" class="hs">Send us a message</h3>
+									<h3 class="mb-4" class="hs">Send Me a message</h3>
 									<div id="form-message-warning" class="mb-4"></div> 
 				      		<div id="form-message-success" class="mb-4">
 				            Your message was sent, thank you!
@@ -114,8 +135,8 @@
 							</div>
 							<div class="col-md-6 d-flex align-items-stretch">
 								<div class="info-wrap w-100 p-lg-5 p-4 img">
-									<h3 class="hs">Contact us</h3>
-									<p class="mb-4">We're open for any suggestion or just to have a chat</p>
+									<h3 class="hs">Contact Me</h3>
+									<p class="mb-4">I am looking for any suggestion or just to have a chat</p>
 				        	<div class="dbox w-100 d-flex align-items-start">
 				        		<div class="icon d-flex align-items-center justify-content-center">
 				        			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
@@ -123,7 +144,7 @@
 									  </svg>
 				        		</div>
 				        		<div class="text pl-3">
-					            <p><span>Discord:</span>DanDesigns#5560</p>
+					            <p><span>Discord:</span> DanDesigns#5560</p>
 					          </div>
 				          </div>
 				        	<div class="dbox w-100 d-flex align-items-center">
@@ -133,7 +154,18 @@
 									  </svg>
 				        		</div>
 				        		<div class="text pl-3">
-					            <p><span>Twitter:</span>DanDesigns00</p>
+					            <p><span>Twitter:</span> DanDesigns00</p>
+					          </div>
+				          </div>
+						  <div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+										<path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+										<path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+									  </svg>
+				        		</div>
+				        		<div class="text pl-3">
+					            <p><span>Email:</span> dandesigns00@gmail.com</p>
 					          </div>
 				          </div>
 			          </div>
@@ -149,6 +181,7 @@
 	<img style="width: 100%; height: 100%;" src="https://mir-s3-cdn-cf.behance.net/9cc47b7966f1aa9ca1cfae3c4864ca6d/ac5323e7-0ca1-45d0-9735-115550026c83_rwc_0x197x3000x525x3000.jpg?h=d47dd46ed6990cc53ab64a2474cae580">
 </footer>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="favicon.js"></script>
 <script>
 	let name = document.getElementById("name").value;
 	let subject = document.getElementById("subject").value;
@@ -181,7 +214,7 @@ function todark() {
 	}
 }
 function tolight() {
-	document.body.style.backgroundColor = "rgba(217, 217, 217, 0.71)";
+	document.body.style.backgroundColor = "#fafafa";
 	document.getElementById("header").style.backgroundColor = "white"
 	document.getElementById("tolight").style.display = "none"
 	document.getElementById("todark").style.display = "inline"
@@ -190,6 +223,8 @@ function tolight() {
 	 hs[i].style.color = "black";
 	}
 }
+let icons = ["https://cdn.discordapp.com/attachments/710462063486566440/1081189271106498621/frame_00_delay-0.88s.gif","https://media.discordapp.net/attachments/710462063486566440/1081189267990130708/frame_01_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081189268367622184/frame_02_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081189269038706688/frame_04_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081189269428781196/frame_05_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081189269747539969/frame_06_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081189270066311179/frame_07_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081189270439608390/frame_08_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081189270775144518/frame_09_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188748844351548/frame_10_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188749209247784/frame_11_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188741122621450/frame_12_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188741672091748/frame_13_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188742313803776/frame_14_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188742691299348/frame_15_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188743098138674/frame_16_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188743467245588/frame_17_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188747879661660/frame_18_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188748374573157/frame_19_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188927089676369/frame_20_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188924321452052/frame_21_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188924636008518/frame_22_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188924933820557/frame_23_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188925227409459/frame_24_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188925516812288/frame_25_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188925797847070/frame_26_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188926091436042/frame_27_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188926368256010/frame_28_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081188926703816744/frame_29_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081189033608220672/frame_30_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081189033964744755/frame_31_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081189034296082462/frame_32_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081189032236679259/frame_33_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081189032635142225/frame_34_delay-0.08s.gif","https://media.discordapp.net/attachments/710462063486566440/1081189033125883946/frame_35_delay-6.4s.gif"]
+favicon.animate(icons,100)
 </script>
 </body>
 </html>
